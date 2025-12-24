@@ -419,4 +419,64 @@
       <li><strong>Edukasi Etika Digital:</strong> Ajarkan anak-anak tentang empati online dan konsekuensi tindakan di dunia maya.</li>
     </ul>
 
-    <h2 id="pen
+        <h2 id="penutup">Penutup</h2>
+    <p>
+      Judi online dan cyber bullying merupakan dua ancaman serius di era digital
+      yang memerlukan perhatian bersama. Melalui edukasi yang berkelanjutan,
+      peningkatan kesadaran digital, dan upaya pencegahan yang komprehensif,
+      masyarakat diharapkan mampu terhindar dari dampak negatif kedua fenomena
+      ini. Mari bersama-sama wujudkan generasi muda yang cerdas, bertanggung
+      jawab, dan bijak dalam memanfaatkan teknologi untuk kebaikan bersama.
+    </p>
+
+    <h3>Referensi</h3>
+    <ul>
+      <li>World Health Organization (WHO). (2020). *Gambling Disorder*.</li>
+      <li>American Psychological Association. (2019). *Understanding Gambling Addiction*.</li>
+      <li>Gambling Commission. (2022). *Annual Report on Gambling Harm*.</li>
+      <li>Undang-Undang Republik Indonesia Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik.</li>
+      <li>UNICEF. (2021). *Children in a Digital World*.</li>
+      <li>Komisi Perlindungan Anak Indonesia (KPAI). (2023). *Laporan Kasus Cyber Bullying*.</li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 | Edukasi Judi Online | Disusun oleh Ismet Awaludin</p>
+</footer>
+
+<script>
+  // Dark Mode Toggle
+  const toggleBtn = document.getElementById('toggleMode');
+  const body = document.body;
+
+  // Check for saved theme in localStorage
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.textContent = '☀️';
+    } else {
+      localStorage.removeItem('theme');
+      toggleBtn.textContent = '🌙';
+    }
+  });
+
+  // Smooth Scroll for Navbar Links
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
